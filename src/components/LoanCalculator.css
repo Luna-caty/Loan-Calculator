@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Poppins-italic";
+    src: url("../Poppins/Poppins-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-SemiBoldItalic";
+    src: url("../Poppins/Poppins-SemiBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-BoldItalic";
+    src: url("../Poppins/Poppins-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Meduim";
+    src: url("../Poppins/Poppins-Medium.ttf");
+}
+
+.InformationsContainer {
+
+    width: 320px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.InformationsBeforeCalculate {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+
+
+.TestDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    background: linear-gradient(109.6deg, rgb(19, 42, 19), rgb(49, 87, 44), rgb(79, 119, 45));
+    background-size: 300% 300%;
+    animation: color 10s ease-in-out infinite;
+    padding-bottom: 20px;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.InformationsBeforeCalculate input {
+    outline: none;
+    background-color: rgb(168, 168, 168);
+    font-family: "Poppins-italic";
+    padding-left: 7px;
+    height: 25px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.InformationsBeforeCalculate button {
+    font-family: "Poppins-SemiBoldItalic";
+    width: 130px;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: rgb(144, 169, 85);
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(118, 139, 70);
+    transition: 0.4s;
+}
+
+.Result {
+    width: 220px;
+    height: 30px;
+    background-color: rgb(236, 243, 158);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins-Meduim";
+    padding-left: 10px;
+
+}
+
+.ResultContainer {
+    padding-left: 70px;
+}
